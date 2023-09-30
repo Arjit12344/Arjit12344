@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .a{
+  height: 200px;
+  width: 300px;
+  background-color: pink;
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  transition: font-size 4s ease-in 0.5s, background-color 4s ease-in 0.5s, transform 4s ease-in 0.5s; 
+   }
+.a:hover{
+  background-color: aqua;
+  font-size: 25px;
+  transform: scale(2, 1) rotate(60deg) translate(200px, 10px);  
+ }
+ .b{
+  height: 100px;
+  width: 200px;
+  background-color: chocolate;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  animation: myanimation 10s infinite normal;
+ }
+@keyframes myanimation{
+  0%{
+    top: 0px;
+    left: 30px;
+    background-color: red;
+  }
+  8%{
+    background-color: orange;
+  }
+  15%{
+    background-color: yellow;
+  }
+  24%{
+    top: 300px;
+    left: 30px;
+    background-color: green;
+  }
+  25%{
+    top: 300px;
+    left: 50px;
+  }
+  33%{
+    background-color: blue;
+  }
+  40%{
+    background-color: indigo;
+  }
+  50%{
+    background-color: violet;
+  }
+  55%{
+    top: 300px;
+    left: 1000px;
+    right: 110px;
+    background-color: pink;
+  }
+  73%{
+    background-color: red;
+  }
+  74%{
+    top: 0px;
+    left: 1000px;
+    right: 110px;
+    background-color: orange;
+  }
+  94%{
+    background-color: yellow;
+  }
+  100%{
+    top: 0px;
+    left: 30px;
+    background-color: yellow;
+  }
+
+}
+  </style>
+</head>
+<body>
+  <p>hi How are you </p>
+  <div class="a">Hello</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="b" style="color: rgb(252, 201, 240);">Hello</div>
+  
+</body>
+</html>
