@@ -35,30 +35,72 @@
       WELCOME
     </div>
     <div class="info">
-      Information related to cars
+      To The AUTOCARE
     </div>
     <div class="details">
       ON this website, you can search about some informations relaed to automobile industry and especially cars. 
     </div>
   </div>
   
+  
+  <footer>
+    <div class="footer">
+    <div class="foot" id="foot1">
+      <p>CATEGORIES</p>
+      <ol id="foot1-ol" class="foot-ol">
+        <li>Sedan Cars</li>
+        <li>Hatchback cars</li>
+        <li>SUVs</li>
+        <li>Coupe</li>
+        <li>Sports Car</li>
+      </ol>
+    </div>
+    <div class="foot" id="foot2">
+      <p>CAR COMPANIEs</p>
+      <ol id="foot2-ol" class="foot-ol">
+        <li>Sedan Cars</li>
+        <li>Hatchback cars</li>
+        <li>SUVs</li>
+        <li>Coupe</li>
+        <li>Sports Car</li>
+      </ol>
+    </div>
+    <div class="foot" id="foot3">
+      <p>RESEARCH</p>
+      <ol id="foot3-ol" class="foot-ol">
+        <li>Sedan Cars</li>
+        <li>Hatchback cars</li>
+        <li>SUVs</li>
+        <li>Coupe</li>
+        <li>Sports Car</li>
+      </ol>
+    </div>
+    <div class="foot" id="foot4">
+      <p>FOLLOW US</p>
+    </div>
+  </div>
+    <div class="thank">THANK YOU FOR VISITING OUR WEBSITE</div>
+  </footer>
 </body>
 </html>
 
 AND FROM BELOW, THERE IS THE CSS CODE FOR ABOVE HTML DOCUMNET !!!!!!!!
-
 *{
   margin: 0;
   padding: 0;
 }
 nav
 {
-      justify-content: space-evenly;
-    height: 45px;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
+  justify-content: space-evenly;
+  height: 45px;
+  background-color: rgb(49 37 37);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
 }
+
 #logo img{
   width: 143px;
 }
@@ -96,31 +138,71 @@ nav
 .hero{
   height: 768px;
   width: 1368px;
-  background-image: url("peakpx (1).jpg");
+  background-image: url("hero.jpg");
+  
 }
 .hero #wel{
   position: relative;
-  top: 34px;
-  left: 20px;
+  top: 77px;
+  left: 27px;;
   font-size: 125px;
   color: white;
 }
 .info{
   position: relative;
   font-size: 65px;
-  top: 24px;
-  left: 22px;
-  color: white;
+  top: 65px;
+  left: 52px;
+  color: #58cbff;
 }
 
 .details{
+  
   left: 247px;
-    position: relative;
-    font-size: 19px;
-    color: rgb(5, 4, 4);
-    top: 119px;
-    background-color: white;
-    display: inline-block;
-    padding: 7px;
-    font-weight: bold;
+  position: relative;
+  font-size: 19px;
+  color: rgb(141 139 169);
+  top: 165px;
+  background-color: rgb(60 28 25);  display: inline-block;
+  padding: 9px;
+  font-weight: bold;
 }
+footer {
+  
+    font-weight: lighter;
+    font-size: 13px;
+    height: 386px;
+    width: 100%;
+    background-color: #0f240f;
+    
+ }
+ .footer{
+    display: flex;
+    justify-content: space-around;
+     
+ }
+ .foot{
+  margin-top: 30px;
+  display: table-cell;
+ }
+ .foot p{
+    color: white;
+ }
+ .foot .foot-ol{
+    position: relative;
+    top: 34px;
+    color: rgb(104, 104, 104);
+    list-style: none;
+ }
+ .foot-ol li{
+    padding: 4px;
+ }
+ .thank{
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(143, 139, 139);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 94px;
+ }
