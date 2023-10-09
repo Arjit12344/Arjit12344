@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="search.css">
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: palevioletred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search{
+  display: flex;
+  position: relative;
+  top: 250px;
+  
+}
+
+.icon{
+
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 10px 10px 35px  black;
+  width: 38px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon i{
+  font-size: 26px;
+}
+  .searchbar input{
+    width: 70px;
+    height: 43px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease-in 0.8s ;
+    box-shadow: 10px 10px 35px  black;
+
+    border: none;
+
+    padding: 10px;
+    font-size: 22px;
+  }
+  .searchbar input:hover{
+    width: 41vw;
+    display: block;
+  }
+  
+  </style>
+</head>
+<body>
+ <div class="search">
+   <div class="icon">
+     <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="searchbar">
+      <input type="text" name="search" id="search" placeholder="Search your Query here">
+    </div>
+  </div>
+  </body>
+</html>
