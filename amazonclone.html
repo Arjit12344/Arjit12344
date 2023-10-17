@@ -9,7 +9,8 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@800&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -23,7 +24,7 @@
         <p class="ind">India</p>
       </div>
     </div>
-    <div class="searchbar">
+    <div class="searchbar navbar">
       <div class="select">
         <select name="categories" id="cat">
           <option value="All">All</option>
@@ -41,13 +42,47 @@
       <button type="submit">
         <i class="fa-solid fa-magnifying-glass"></i>      </button>
     </div>
+    <div class="lang navbar">
+      <img src="usa.png" alt="US">
+      <p>EN</p>
+    </div>
+    <div class="hello navbar">
+      <p class="sign-in">Hello, sign in</p>
+      <p class="lists">
+        Accounts & Lists
+        <i class="fa-solid fa-caret-down"></i>
+      </p>
+    </div>
+    <div class="ret navbar">
+      <p class="returns">Returns</p>
+      <p class="order">& Orders</p>
+    </div>
+    <div class="cart navbar`">
+      <i class="ri-shopping-cart-line"></i>
+      <p id="cart">Cart</p>
+    </div>
   </nav>
+  <div class="panel">
+    <div id="all" class="navbar">
+      <p class="all">
+      <i class="fa-solid fa-bars"></i>
+        All
+      </p>
+    </div>
+    <div class="lis">
+      <ul>
+        <li class="navbar">Today's Deals</li>
+        <li class="navbar">Customer Service</li>
+        <li class="navbar">Registry</li>
+        <li class="navbar">Gift Cards</li>
+        <li class="navbar">Sell</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
 
-
 !!!!! BELOW IS THE CSS CODE FOR ABOVE HTML FILE !!!!!
-
 *{
   margin: 0;
   padding: 0;
@@ -62,14 +97,14 @@ nav{
   align-items: center;
 }
 .navbar:hover{
-  border: 2px solid white;
+  border: 1.5px solid white;
 }
 .logo{
-  height: 8.6vmin;
+  height: 8.5vmin;
 }
 .logo img{
-  height: 8.5vmin;
-  width: 86%;
+  height: 9.5vmin;
+  width: 90%;
 }
 .address{
   padding: 7px;
@@ -90,10 +125,10 @@ nav{
 }
 .searchbar{
   display: flex;
-  width: 47.5vmax;
+  width: 54vmax;
 }
 .searchbar select{
-  height: 40px;
+  height: 6.5vmin;
   width: 55px;
   background-color: #e6e6e6;
   outline: none;
@@ -111,6 +146,7 @@ nav{
 .searchbar #search{
   width:  86%;
   padding: 5px;
+  font-size: 12px;
   color: grey;
   font-family: Poppins;
   font-weight: bold;
@@ -128,4 +164,91 @@ nav{
 }
 .searchbar button i{
   color: #08003d;
+}
+.lang{
+  display: flex;
+  align-items: center;
+  height: 30px; 
+  padding: 4px;
+}
+.lang p{
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px;
+  font-family: Gabarito;
+}
+.lang img{
+  float: left;
+  width: 22px;
+  height: 13px;
+}
+.hello{
+  padding: 4px;
+}
+.hello .sign-in{
+  font-size: 0.75rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hello .lists{
+  font-size: 14.5px;
+  font-weight: 800;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ret{
+  padding: 4px;
+}
+.ret .returns{
+  font-size: 0.75rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ret .order{
+font-size: 14.5px;
+font-weight: 800;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cart{
+  display:flex;
+  align-items: flex-end;
+    padding: 4px;
+
+}
+.cart i{
+  font-size: 32px;
+}
+.cart #cart{
+  font-weight: 700;
+  font-size: 14px;
+}
+.panel{
+  display: flex;
+  background-color: #060c33;
+  height: 37px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.panel .all{
+  font-size: 13px;
+  font-weight: 200;
+  font-family: poppins;
+  padding: 5px;
+}
+.lis{
+   width: 95%;
+}
+.lis ul{
+  display: flex;
+}
+.lis ul li{
+  list-style: none;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 15px;
+  font-family: poppins;
+  padding: 5px;
+}
+.panel .all i{
+  color: white; 
 }
